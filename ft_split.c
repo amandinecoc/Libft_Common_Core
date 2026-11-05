@@ -6,7 +6,7 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:54:43 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:50:47 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:39:00 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,11 +94,9 @@ char	**malloc_tab_remplir(char const *s, char **tab, int word, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int		i;
 	int		word;
 	char	**tab;
 
-	i = 0;
 	word = count_words(s, c);
 	if (!s || s[0] == '\0')
 	{

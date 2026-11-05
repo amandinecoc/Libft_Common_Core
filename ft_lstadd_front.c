@@ -6,10 +6,13 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:57:46 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:53:59 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/05 14:13:33 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	new->next = (*lst);
+}

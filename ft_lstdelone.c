@@ -6,10 +6,13 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:59:25 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:54:03 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:59:08 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+	del(lst->content);
+}

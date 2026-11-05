@@ -6,13 +6,13 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:40:30 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:45:54 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:57:14 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void s[.n], size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	char	*tmp_s;
 

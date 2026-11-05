@@ -6,7 +6,7 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:45:26 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:51:46 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:38:36 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,19 @@ size_t	strlcat(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	j;
-	unsigned int	destorig;
+	unsigned int	dest;
 
-	destorig = ft_strlen(dest);
-	i = destorig;
+	dest = ft_strlen(dst);
+	i = dest;
 	j = 0;
-	if (size <= destorig)
+	if (size <= dest)
 		return (size + ft_strlen(src));
 	while (src[j] != '\0' && (i + 1) < size)
 	{
-		dest[i] = src[j];
+		dst[i] = src[j];
 		i++;
 		j++;
 	}
-	dest[i] = '\0';
-	return (destorig + ft_strlen(src));
+	dst[i] = '\0';
+	return (dest + ft_strlen(src));
 }

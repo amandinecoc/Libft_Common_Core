@@ -6,7 +6,7 @@
 /*   By: amcocoua <amcocoua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 16:52:12 by amcocoua          #+#    #+#             */
-/*   Updated: 2026/11/02 17:46:04 by amcocoua         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:58:00 by amcocoua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*calloc(size_t n, size_t size)
 	int		len;
 	int		i;
 
-	len = nmemb * size;
+	len = n * size;
 	i = 0;
 	tmp = malloc(sizeof(char) * len);
 	if (!tmp)
